@@ -1,25 +1,12 @@
 package ex6;
-import java.util.Scanner;
 
-public class EX6 {
+public class Ex6 {
+
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        int[] numes = new int[10];
-
-        System.out.println("Digite 10 numeros: ");
-        for (int x = 0; x < 10; x++) {
-            numes[x] = entrada.nextInt();
+        System.out.println("Este codigo mostrara numeros de 1 a 10 em ordem decrescente: ");
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(i);
         }
-
-        int MaiorNum = numes[0];
-
-        for (int num1 : numes) {
-            if (num1 > MaiorNum) { 
-                MaiorNum = num1;
-            }
-        }
-
-        System.out.println("Esse é o maior numero: " + MaiorNum);
-        entrada.close();
     }
+    
 }
